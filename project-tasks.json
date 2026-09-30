@@ -6,13 +6,14 @@
       "title": "修复源词表中的编辑说明、行号和重复项，校正目录条目数",
       "verify": "三份源词表格式、去重、权重与目录计数实测；逐条与已验收官网快照一致；git diff --check",
       "passes": true,
-      "evidence": "../aime/build/release-audit/dictionary-source-checks.json: 3 lists, 480 valid unique entries; index counts and website vocabulary rows match; git diff --check passed; not published"
+      "evidence": "../aime/build/release-audit/dictionary-source-checks.json: 3 lists, 480 valid entries, unique within each feed; 471 unique text/code pairs across feeds; index counts and website vocabulary rows match; git diff --check passed; not published"
     },
     {
       "id": "D02",
       "title": "生成带版本、来源、许可与 SHA-256 的可复现发行包",
       "verify": "两次构建哈希一致；解包核对全部文件、来源与署名；实际导入生成的词条",
-      "passes": false
+      "passes": true,
+      "evidence": "docs/release-verification-2026-10-01.md; build/release-audit/{tests.log,package-verification.json,rime-verification.json,rime-1.log,rime-2.log,rime-3.log}; 5 tests passed; two ZIPs byte-identical (SHA-256 5e9c314e8c7e134d9e7b04f9f760a5f02fa09311a4b24424c256d8614ec44a5f); all 12 archive members verified; 480 rows match pinned source and website, 471 combined; actual RIME compiled and returned 3 representative candidates in isolated temporary directories; local only"
     },
     {
       "id": "D03",

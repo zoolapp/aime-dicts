@@ -1,8 +1,7 @@
 # AIME 在线词库
 
-[AIME](https://github.com/foru17/aime) 输入法的公开词库源。每个词表都是一个纯文本文件，
-在 AIME 设置 › 词库 › 在线词库 中一键订阅；AIME 每小时检查、每个词表至多 12 小时下载一次，
-新词在你停止打字后自动生效，全拼与小鹤双拼都能打出。
+AIME 输入法的词库源。当前仓库与发行包仅在本地验收，公开公司仓库及在线订阅地址尚未发布。
+每个词表都是一个纯文本文件；本地导入与 RIME 发行包使用方式见 [发行说明](docs/releases.md)。
 
 也适用于任何 RIME 前端：词条行与 RIME `dict.yaml` 的词条部分兼容。
 
@@ -14,7 +13,16 @@
 | AI 与开发术语 | 大模型、智能体、提示词、RAG、向量数据库等 | [`feeds/ai-terms-dev-tools.txt`](feeds/ai-terms-dev-tools.txt) |
 | 互联网品牌与热词 | 平台、品牌与 2026 年常见流行语 | [`feeds/internet-brands-platforms.txt`](feeds/internet-brands-platforms.txt) |
 
-`index.json` 是 AIME 读取的目录（名称、说明、词条数、原始链接）。
+`index.json` 包含名称、说明、词条数与历史地址；其中 URL 在公司仓库确认前不作为可用入口。
+
+## 版本化构建
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 scripts/build_release.py --revision HEAD --version 2026-10-01 --output dist/2026-10-01
+```
+
+发行包包括 TXT、RIME 词典、来源 commit、署名和 SHA-256；输出目录必须不存在。
 
 ## 格式
 
@@ -33,3 +41,4 @@
 ## 许可
 
 词表内容以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans) 发布。
+构建与验收工具代码使用 [MIT](LICENSE-CODE)。
