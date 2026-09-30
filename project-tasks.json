@@ -1,0 +1,24 @@
+{
+  "scope": "AIME 词库源的公司仓库与版本化发行；公开发布单独验收",
+  "tasks": [
+    {
+      "id": "D01",
+      "title": "修复源词表中的编辑说明、行号和重复项，校正目录条目数",
+      "verify": "三份源词表格式、去重、权重与目录计数实测；逐条与已验收官网快照一致；git diff --check",
+      "passes": true,
+      "evidence": "../aime/build/release-audit/dictionary-source-checks.json: 3 lists, 480 valid unique entries; index counts and website vocabulary rows match; git diff --check passed; not published"
+    },
+    {
+      "id": "D02",
+      "title": "生成带版本、来源、许可与 SHA-256 的可复现发行包",
+      "verify": "两次构建哈希一致；解包核对全部文件、来源与署名；实际导入生成的词条",
+      "passes": false
+    },
+    {
+      "id": "D03",
+      "title": "确认公司组织后创建公开词库仓库并发布版本",
+      "verify": "认证 API 回读仓库归属；固定版本下载实测并校验 SHA-256；官网与 App 使用真实地址",
+      "passes": false
+    }
+  ]
+}

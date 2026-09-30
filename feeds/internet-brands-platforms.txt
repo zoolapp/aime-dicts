@@ -1,8 +1,7 @@
 # 互联网品牌与热词 — AIME 在线词库 (CC BY 4.0)
 # 格式：词条<TAB>拼音（空格分隔）<TAB>权重；兼容 RIME dict.yaml 词条行
 # https://github.com/foru17/aime-dicts
-172 lines — need 160. Duplicates in pinyin column? uniq -d on column 1 (词条) shows 搭子 and 栓Q duplicated? Wait — awk -F'\t' '{print $1}' ... shows duplicates of the word itself. "搭子" appears twice? I wrote 搭子 once... Oh "搭子文化"? No I removed it. Hmm, "栓Q" appears once. Wait maybe the issue: I wrote "搭子" at line 2 and... let me check. Actually maybe duplicates come from lines where tab parsing differs. Let me grep.2:搭子	da zi	92
-22:栓Q	shuan q	78
+栓Q	shuan q	78
 显眼包	xian yan bao	90
 搭子	da zi	92
 情绪价值	qing xu jia zhi	93
@@ -24,7 +23,6 @@ city不city	city bu city	85
 破防	po fang	85
 绝绝子	jue jue zi	78
 芭比Q了	ba bi q le	78
-栓Q	shuan q	78
 尊嘟假嘟	zun du jia du	78
 泰裤辣	tai ku la	80
 公主请上车	gong zhu qing shang che	78
