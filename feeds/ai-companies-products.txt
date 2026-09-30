@@ -1,0 +1,163 @@
+# AI 公司与产品 — AIME 在线词库 (CC BY 4.0)
+# 格式：词条<TAB>拼音（空格分隔）<TAB>权重；兼容 RIME dict.yaml 词条行
+# https://github.com/foru17/aime-dicts
+OpenAI	openai	98
+Anthropic	anthropic	97
+xAI	xai	96
+DeepMind	deepmind	93
+谷歌	gu ge	86
+Google	google	88
+Meta	meta	87
+微软	wei ruan	86
+Microsoft	microsoft	88
+Mistral	mistral	90
+Hugging Face	huggingface	92
+Perplexity	perplexity	91
+Midjourney	midjourney	92
+Stability AI	stabilityai	84
+Cohere	cohere	80
+Runway	runway	88
+ElevenLabs	elevenlabs	86
+Suno	suno	85
+Groq	groq	86
+NVIDIA	nvidia	90
+英伟达	ying wei da	88
+Anysphere	anysphere	82
+Cognition	cognition	80
+Character.AI	characterai	84
+Trae	trae	86
+Black Forest Labs	blackforestlabs	83
+Luma AI	lumaai	82
+Pika	pika	80
+清影	qing ying	82
+DeepSeek-R1	deepseekr1	94
+深度求索	shen du qiu suo	97
+DeepSeek	deepseek	98
+月之暗面	yue zhi an mian	96
+Moonshot	moonshot	90
+智谱	zhi pu	95
+Zhipu	zhipu	92
+MiniMax	minimax	94
+稀宇科技	xi yu ke ji	80
+阶跃星辰	jie yue xing chen	91
+StepFun	stepfun	88
+零一万物	ling yi wan wu	89
+百川智能	bai chuan zhi neng	87
+Baichuan	baichuan	85
+科大讯飞	ke da xun fei	88
+iFlytek	iflytek	83
+百度	bai du	90
+Baidu	baidu	86
+阿里巴巴	a li ba ba	85
+Alibaba	alibaba	86
+阿里云	a li yun	87
+腾讯	teng xun	88
+Tencent	tencent	85
+字节跳动	zi jie tiao dong	90
+ByteDance	bytedance	88
+快手	kuai shou	84
+Kuaishou	kuaishou	80
+华为	hua wei	86
+Huawei	huawei	83
+昆仑万维	kun lun wan wei	82
+商汤科技	shang tang ke ji	81
+SenseTime	sensetime	79
+面壁智能	mian bi zhi neng	78
+生数科技	sheng shu ke ji	83
+硅基流动	gui ji liu dong	82
+SiliconFlow	siliconflow	80
+密塔科技	mi ta ke ji	76
+宇树科技	yu shu ke ji	83
+Unitree	unitree	81
+智元机器人	zhi yuan ji qi ren	78
+小米	xiao mi	79
+ChatGPT	chatgpt	99
+GPT-4o	gpt4o	94
+GPT-4.1	gpt41	89
+GPT-5	gpt5	97
+o1	o1	86
+o3	o3	90
+o4-mini	o4mini	84
+Sora	sora	93
+Codex	codex	92
+Claude	claude	98
+Claude Code	claudecode	91
+Claude Opus	claudeopus	90
+Claude Sonnet	claudesonnet	89
+Gemini	gemini	96
+Gemini Pro	geminipro	86
+Veo	veo	90
+NotebookLM	notebooklm	91
+Gemma	gemma	84
+Imagen	imagen	82
+Llama	llama	93
+Llama 3	llama3	86
+Llama 4	llama4	88
+Grok	grok	95
+Grok 3	grok3	84
+Grok 4	grok4	90
+Copilot	copilot	92
+GitHub Copilot	githubcopilot	90
+Cursor	cursor	94
+Windsurf	windsurf	88
+Manus	manus	90
+Devin	devin	83
+v0	v0	82
+Flux	flux	88
+FLUX.1	flux1	80
+Stable Diffusion	stablediffusion	86
+SDXL	sdxl	78
+Mixtral	mixtral	80
+Codestral	codestral	78
+Kimi K3	kimik3	88
+Mistral Large	mistrallarge	82
+通义千问	tong yi qian wen	96
+Qwen	qwen	95
+Qwen3	qwen3	90
+Qwen2.5	qwen25	84
+QwQ	qwq	82
+通义万相	tong yi wan xiang	86
+通义灵码	tong yi ling ma	84
+豆包	dou bao	96
+Doubao	doubao	90
+Kimi	kimi	97
+Kimi K2	kimik2	90
+智谱清言	zhi pu qing yan	92
+GLM	glm	93
+GLM-4	glm4	88
+ChatGLM	chatglm	84
+AutoGLM	autoglm	82
+文心一言	wen xin yi yan	94
+DeepSeek-V3	deepseekv3	93
+ERNIE	ernie	82
+文心一格	wen xin yi ge	76
+海螺	hai luo	90
+Hailuo	hailuo	86
+可灵	ke ling	93
+Kling	kling	90
+即梦	ji meng	92
+Jimeng	jimeng	84
+Dreamina	dreamina	78
+元宝	yuan bao	90
+腾讯元宝	teng xun yuan bao	86
+混元	hun yuan	90
+腾讯混元	teng xun hun yuan	86
+Hunyuan	hunyuan	84
+跃问	yue wen	84
+讯飞星火	xun fei xing huo	88
+文小言	wen xiao yan	88
+天工	tian gong	84
+Skywork	skywork	78
+通义听悟	tong yi ting wu	83
+日日新	ri ri xin	76
+盘古	pan gu	80
+书生浦语	shu sheng pu yu	82
+InternLM	internlm	83
+扣子	kou zi	86
+Coze	coze	84
+Dify	dify	85
+秘塔搜索	mi ta sou suo	82
+纳米搜索	na mi sou suo	78
+星野	xing ye	80
+Vidu	vidu	84
+猫箱	mao xiang	78

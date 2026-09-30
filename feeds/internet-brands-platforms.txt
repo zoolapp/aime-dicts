@@ -1,0 +1,165 @@
+# 互联网品牌与热词 — AIME 在线词库 (CC BY 4.0)
+# 格式：词条<TAB>拼音（空格分隔）<TAB>权重；兼容 RIME dict.yaml 词条行
+# https://github.com/foru17/aime-dicts
+172 lines — need 160. Duplicates in pinyin column? uniq -d on column 1 (词条) shows 搭子 and 栓Q duplicated? Wait — awk -F'\t' '{print $1}' ... shows duplicates of the word itself. "搭子" appears twice? I wrote 搭子 once... Oh "搭子文化"? No I removed it. Hmm, "栓Q" appears once. Wait maybe the issue: I wrote "搭子" at line 2 and... let me check. Actually maybe duplicates come from lines where tab parsing differs. Let me grep.2:搭子	da zi	92
+22:栓Q	shuan q	78
+显眼包	xian yan bao	90
+搭子	da zi	92
+情绪价值	qing xu jia zhi	93
+松弛感	song chi gan	90
+city不city	city bu city	85
+班味	ban wei	88
+硬控	ying kong	85
+偷感	tou gan	82
+遥遥领先	yao yao ling xian	90
+泼天的富贵	po tian de fu gui	85
+老登	lao deng	80
+牛马	niu ma	88
+已读乱回	yi du luan hui	85
+浓人	nong ren	80
+淡人	dan ren	80
+精神内耗	jing shen nei hao	85
+摆烂	bai lan	88
+躺平	tang ping	85
+破防	po fang	85
+绝绝子	jue jue zi	78
+芭比Q了	ba bi q le	78
+栓Q	shuan q	78
+尊嘟假嘟	zun du jia du	78
+泰裤辣	tai ku la	80
+公主请上车	gong zhu qing shang che	78
+脆皮大学生	cui pi da xue sheng	78
+特种兵旅游	te zhong bing lv you	80
+多巴胺穿搭	duo ba an chuan da	78
+美拉德	mei la de	75
+新中式	xin zhong shi	78
+发疯文学	fa feng wen xue	80
+废话文学	fei hua wen xue	75
+吗喽	ma lou	75
+打工人	da gong ren	85
+干饭人	gan fan ren	78
+尾款人	wei kuan ren	70
+早C晚A	zao c wan a	72
+小镇做题家	xiao zhen zuo ti jia	75
+哈基米	ha ji mi	78
+爷青回	ye qing hui	75
+塌房	ta fang	80
+那咋了	na za le	80
+如何呢又能怎	ru he ne you neng zen	75
+包的	bao de	80
+已老实求放过	yi lao shi qiu fang guo	75
+电子榨菜	dian zi zha cai	80
+电子布洛芬	dian zi bu luo fen	75
+抽象	chou xiang	78
+钝感力	dun gan li	70
+边界感	bian jie gan	72
+社恐	she kong	78
+社牛	she niu	78
+i人	i ren	80
+e人	e ren	80
+报复性熬夜	bao fu xing ao ye	70
+佛系	fo xi	70
+内卷	nei juan	80
+卷王	juan wang	72
+开摆	kai bai	70
+摸鱼	mo yu	80
+搬砖	ban zhuan	72
+上岸	shang an	78
+下头	xia tou	75
+上头	shang tou	72
+磕到了	ke dao le	70
+去班味	qu ban wei	78
+拉满	la man	70
+小红书	xiao hong shu	95
+抖音	dou yin	95
+快手	kuai shou	90
+B站	b zhan	90
+哔哩哔哩	bi li bi li	90
+微博	wei bo	90
+即刻	ji ke	75
+知乎	zhi hu	88
+X	x	80
+Threads	threads	78
+Bluesky	bluesky	72
+微信	wei xin	95
+视频号	shi pin hao	85
+朋友圈	peng you quan	85
+公众号	gong zhong hao	80
+豆瓣	dou ban	80
+贴吧	tie ba	78
+网易云音乐	wang yi yun yin yue	80
+QQ音乐	qq yin yue	78
+爱奇艺	ai qi yi	80
+腾讯视频	teng xun shi pin	82
+优酷	you ku	78
+芒果TV	mang guo tv	75
+西瓜视频	xi gua shi pin	72
+今日头条	jin ri tou tiao	85
+得物	de wu	78
+闲鱼	xian yu	82
+Soul	soul	72
+钉钉	ding ding	80
+飞书	fei shu	82
+企业微信	qi ye wei xin	78
+斗鱼	dou yu	70
+虎牙	hu ya	70
+老福特	lao fu te	68
+Lofter	lofter	68
+AcFun	acfun	70
+支付宝	zhi fu bao	90
+淘宝	tao bao	92
+天猫	tian mao	85
+京东	jing dong	90
+拼多多	pin duo duo	90
+美团	mei tuan	90
+饿了么	e le me	82
+滴滴	di di	82
+高德地图	gao de di tu	78
+华为	hua wei	95
+鸿蒙	hong meng	90
+HarmonyOS	harmonyos	85
+小米	xiao mi	92
+小米SU7	xiaomisu7	85
+小米汽车	xiao mi qi che	85
+理想汽车	li xiang qi che	85
+蔚来	wei lai	82
+小鹏	xiao peng	82
+比亚迪	bi ya di	92
+大疆	da jiang	88
+Vision Pro	visionpro	80
+iPhone	iphone	90
+Temu	temu	82
+SHEIN	shein	80
+OPPO	oppo	82
+vivo	vivo	82
+荣耀	rong yao	80
+一加	yi jia	75
+红米	hong mi	78
+Redmi	redmi	75
+特斯拉	te si la	88
+极氪	ji ke	80
+问界	wen jie	85
+智界	zhi jie	78
+享界	xiang jie	72
+阿维塔	a wei ta	72
+零跑	ling pao	72
+哪吒汽车	ne zha qi che	70
+仰望	yang wang	72
+方程豹	fang cheng bao	70
+腾势	teng shi	70
+吉利	ji li	78
+奇瑞	qi rui	72
+五菱	wu ling	75
+华为Mate70	huaweimate70	78
+Pura70	pura70	72
+鸿蒙智行	hong meng zhi xing	78
+字节跳动	zi jie tiao dong	88
+腾讯	teng xun	92
+阿里巴巴	a li ba ba	90
+百度	bai du	85
+网易	wang yi	82
+米哈游	mi ha you	80
+泡泡玛特	pao pao ma te	78
+蜜雪冰城	mi xue bing cheng	82
+瑞幸咖啡	rui xing ka fei	80
+海底捞	hai di lao	75

@@ -1,0 +1,163 @@
+# AI 与开发术语 — AIME 在线词库 (CC BY 4.0)
+# 格式：词条<TAB>拼音（空格分隔）<TAB>权重；兼容 RIME dict.yaml 词条行
+# https://github.com/foru17/aime-dicts
+大模型	da mo xing	96
+智能体	zhi neng ti	95
+多模态	duo mo tai	94
+提示词	ti shi ci	95
+检索增强生成	jian suo zeng qiang sheng cheng	90
+向量数据库	xiang liang shu ju ku	88
+具身智能	ju shen zhi neng	88
+推理模型	tui li mo xing	92
+思维链	si wei lian	90
+上下文窗口	shang xia wen chuang kou	90
+幻觉	huan jue	86
+微调	wei tiao	92
+蒸馏	zheng liu	84
+算力	suan li	90
+端侧模型	duan ce mo xing	86
+混合专家	hun he zhuan jia	88
+词元	ci yuan	84
+对齐	dui qi	86
+世界模型	shi jie mo xing	88
+开源权重	kai yuan quan zhong	84
+氛围编程	fen wei bian cheng	86
+人工智能	ren gong zhi neng	98
+生成式人工智能	sheng cheng shi ren gong zhi neng	90
+机器学习	ji qi xue xi	94
+深度学习	shen du xue xi	94
+神经网络	shen jing wang luo	90
+自然语言处理	zi ran yu yan chu li	88
+计算机视觉	ji suan ji shi jue	86
+强化学习	qiang hua xue xi	88
+预训练	yu xun lian	90
+指令微调	zhi ling wei tiao	88
+提示工程	ti shi gong cheng	90
+上下文学习	shang xia wen xue xi	84
+嵌入向量	qian ru xiang liang	86
+向量检索	xiang liang jian suo	86
+知识库	zhi shi ku	88
+知识图谱	zhi shi tu pu	82
+长上下文	chang shang xia wen	86
+注意力机制	zhu yi li ji zhi	86
+分词器	fen ci qi	86
+工具调用	gong ju diao yong	90
+函数调用	han shu diao yong	86
+多智能体	duo zhi neng ti	88
+长期记忆	chang qi ji yi	82
+安全对齐	an quan dui qi	84
+奖励模型	jiang li mo xing	84
+偏好优化	pian hao you hua	82
+过拟合	guo ni he	80
+梯度下降	ti du xia jiang	80
+反向传播	fan xiang chuan bo	80
+多头注意力	duo tou zhu yi li	80
+键值缓存	jian zhi huan cun	82
+推测解码	tui ce jie ma	80
+量化	liang hua	86
+知识蒸馏	zhi shi zheng liu	84
+合成数据	he cheng shu ju	82
+分布式训练	fen bu shi xun lian	84
+参数量	can shu liang	84
+上下文长度	shang xia wen chang du	84
+推理加速	tui li jia su	82
+模型压缩	mo xing ya suo	80
+显存	xian cun	84
+首字时延	shou zi shi yan	80
+基础模型	ji chu mo xing	90
+语言模型	yu yan mo xing	90
+小模型	xiao mo xing	82
+端侧推理	duan ce tui li	82
+私有化部署	si you hua bu shu	84
+本地部署	ben di bu shu	84
+模型服务	mo xing fu wu	82
+推理服务	tui li fu wu	82
+令牌	ling pai	78
+速率限制	su lv xian zhi	76
+系统提示词	xi tong ti shi ci	86
+用户提示词	yong hu ti shi ci	80
+少样本学习	shao yang ben xue xi	78
+零样本学习	ling yang ben xue xi	78
+思维树	si wei shu	76
+自我一致性	zi wo yi zhi xing	72
+检索	jian suo	80
+重排序	chong pai xu	78
+召回	zhao hui	76
+语义分块	yu yi fen kuai	74
+文档解析	wen dang jie xi	76
+多模态理解	duo mo tai li jie	82
+文生图	wen sheng tu	88
+文生视频	wen sheng shi pin	86
+图生图	tu sheng tu	80
+语音合成	yu yin he cheng	82
+语音识别	yu yin shi bie	84
+数字人	shu zi ren	84
+智能客服	zhi neng ke fu	80
+代码补全	dai ma bu quan	86
+代码生成	dai ma sheng cheng	86
+智能编程	zhi neng bian cheng	84
+低代码	di dai ma	80
+无代码	wu dai ma	76
+工作流	gong zuo liu	82
+编排	bian pai	76
+插件	cha jian	80
+LLM	llm	96
+AGI	agi	92
+RAG	rag	94
+MCP	mcp	90
+A2A	a2a	82
+MoE	moe	88
+RLHF	rlhf	90
+LoRA	lora	90
+GPU	gpu	94
+TPU	tpu	86
+NPU	npu	86
+API	api	96
+SDK	sdk	92
+CLI	cli	90
+token	token	88
+Transformer	transformer	90
+embedding	embedding	86
+fine-tuning	finetuning	84
+prompt	prompt	90
+agent	agent	88
+CUDA	cuda	88
+ONNX	onnx	78
+JSON	json	90
+YAML	yaml	82
+HTTP	http	88
+REST	rest	84
+GraphQL	graphql	82
+gRPC	grpc	80
+WebSocket	websocket	80
+OAuth	oauth	82
+GitHub Copilot	githubcopilot	94
+VSCode	vscode	96
+Xcode	xcode	90
+Vercel	vercel	90
+Cloudflare	cloudflare	92
+Supabase	supabase	86
+Docker	docker	94
+Kubernetes	kubernetes	92
+Rust	rust	90
+TypeScript	typescript	94
+SwiftUI	swiftui	88
+Next.js	nextjs	92
+Bun	bun	84
+Deno	deno	82
+GitHub	github	96
+Git	git	96
+npm	npm	90
+pnpm	pnpm	84
+Node.js	nodejs	94
+Python	python	96
+React	react	94
+Vue	vue	88
+Tailwind	tailwind	86
+PostgreSQL	postgresql	88
+Redis	redis	88
+Nginx	nginx	84
+Linux	linux	92
+macOS	macos	90
+Figma	figma	86
+Cursor	cursor	90

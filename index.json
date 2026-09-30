@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "name": "AIME 在线词库",
+  "homepage": "https://github.com/foru17/aime-dicts",
+  "feeds": [
+    {
+      "id": "ai-companies-products",
+      "name": "AI 公司与产品",
+      "description": "OpenAI、Anthropic、DeepSeek、Claude、ChatGPT 等 AI 公司、模型与产品名，按正确大小写上屏。",
+      "category": "ai",
+      "path": "feeds/ai-companies-products.txt",
+      "entries": 160,
+      "url": "https://raw.githubusercontent.com/foru17/aime-dicts/main/feeds/ai-companies-products.txt"
+    },
+    {
+      "id": "ai-terms-dev-tools",
+      "name": "AI 与开发术语",
+      "description": "大模型、智能体、提示词、RAG、向量数据库等 AI 与开发者常用术语。",
+      "category": "ai",
+      "path": "feeds/ai-terms-dev-tools.txt",
+      "entries": 160,
+      "url": "https://raw.githubusercontent.com/foru17/aime-dicts/main/feeds/ai-terms-dev-tools.txt"
+    },
+    {
+      "id": "internet-brands-platforms",
+      "name": "互联网品牌与热词",
+      "description": "平台、品牌与 2026 年常见的互联网流行语。",
+      "category": "internet",
+      "path": "feeds/internet-brands-platforms.txt",
+      "entries": 162,
+      "url": "https://raw.githubusercontent.com/foru17/aime-dicts/main/feeds/internet-brands-platforms.txt"
+    }
+  ]
+}
