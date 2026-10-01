@@ -17,8 +17,15 @@
     },
     {
       "id": "D03",
-      "title": "确认公司组织后创建公开词库仓库并发布版本",
-      "verify": "认证 API 回读仓库归属；固定版本下载实测并校验 SHA-256；官网与 App 使用真实地址",
+      "title": "在公司组织创建公开词库仓库并发布固定版本",
+      "verify": "认证 API 回读 zoolapp 归属；匿名下载固定版本 15 个资产、目录和 3 个词表，核对 SHA-256；临时目录 RIME 编译与代表候选",
+      "passes": true,
+      "evidence": "docs/publication-2026-10-01.md; build/publication/http-verification.json: 19 HTTP 200 downloads and all hashes matched; 6 tests passed; byte-identical reproducible archives; real RIME compilation and 3 candidates passed"
+    },
+    {
+      "id": "D04",
+      "title": "AIME 官网接入正式公司词库入口",
+      "verify": "官网展示已验证的仓库与固定版本，正式站链接与下载实测",
       "passes": false
     }
   ]
