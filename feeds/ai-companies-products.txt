@@ -1,6 +1,6 @@
 # AI 公司与产品 — AIME 在线词库 (CC BY 4.0)
 # 格式：词条<TAB>拼音（空格分隔）<TAB>权重；兼容 RIME dict.yaml 词条行
-# https://github.com/foru17/aime-dicts
+# https://github.com/zoolapp/aime-dicts
 OpenAI	openai	98
 Anthropic	anthropic	97
 xAI	xai	96

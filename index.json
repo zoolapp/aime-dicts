@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "AIME 在线词库",
-  "homepage": "https://github.com/foru17/aime-dicts",
+  "homepage": "https://github.com/zoolapp/aime-dicts",
   "feeds": [
     {
       "id": "ai-companies-products",
@@ -10,7 +10,13 @@
       "category": "ai",
       "path": "feeds/ai-companies-products.txt",
       "entries": 160,
-      "url": "https://raw.githubusercontent.com/foru17/aime-dicts/main/feeds/ai-companies-products.txt"
+      "url": "https://raw.githubusercontent.com/zoolapp/aime-dicts/v2026.10.01/feeds/ai-companies-products.txt",
+      "version": "2026.10.01",
+      "sha256": "bd650110dd75ccab608197081ff3e042392e32dc45569ff4fdf48912b1eca837",
+      "size": 3581,
+      "license": "CC-BY-4.0",
+      "attribution": "Luo Lei and contributors",
+      "format": "text-tab-pinyin-weight"
     },
     {
       "id": "ai-terms-dev-tools",
@@ -19,7 +25,13 @@
       "category": "ai",
       "path": "feeds/ai-terms-dev-tools.txt",
       "entries": 160,
-      "url": "https://raw.githubusercontent.com/foru17/aime-dicts/main/feeds/ai-terms-dev-tools.txt"
+      "url": "https://raw.githubusercontent.com/zoolapp/aime-dicts/v2026.10.01/feeds/ai-terms-dev-tools.txt",
+      "version": "2026.10.01",
+      "sha256": "6eea6abc6a24778f18b3b88a7069a0497591d85e6a5c1d05aae82aa91c3025b7",
+      "size": 4209,
+      "license": "CC-BY-4.0",
+      "attribution": "Luo Lei and contributors",
+      "format": "text-tab-pinyin-weight"
     },
     {
       "id": "internet-brands-platforms",
@@ -28,7 +40,16 @@
       "category": "internet",
       "path": "feeds/internet-brands-platforms.txt",
       "entries": 160,
-      "url": "https://raw.githubusercontent.com/foru17/aime-dicts/main/feeds/internet-brands-platforms.txt"
+      "url": "https://raw.githubusercontent.com/zoolapp/aime-dicts/v2026.10.01/feeds/internet-brands-platforms.txt",
+      "version": "2026.10.01",
+      "sha256": "14f761d3390ec31115e1b4e665d44203e93946b02810ce65dc58f4a189caff77",
+      "size": 3838,
+      "license": "CC-BY-4.0",
+      "attribution": "Luo Lei and contributors",
+      "format": "text-tab-pinyin-weight"
     }
-  ]
+  ],
+  "releaseVersion": "2026.10.01",
+  "license": "CC-BY-4.0",
+  "attribution": "Luo Lei and contributors"
 }

@@ -1,7 +1,8 @@
 # 词库发行包
 
-当前仅在本地验收，尚未发布公司 GitHub 仓库；`index.json` 的历史个人地址不代表已上线。
-包内不写入这些未经验证的地址，`SOURCE.json` 明确标记 `publicationStatus: pending`。
+维护仓库为 `zoolapp/aime-dicts`；固定发行版本为 `v2026.10.01`。
+`SOURCE.json` 记录公开仓库与完整源 commit；没有传入 `--repository` 的离线构建仍标记 `publicationStatus: pending`。
+线上验收证据见 [发布记录](publication-2026-10-01.md)。
 
 ## 构建
 
@@ -9,7 +10,7 @@
 
 ```sh
 python3 -m unittest discover -s tests -v
-python3 scripts/build_release.py --revision HEAD --version 2026-10-01 --output dist/2026-10-01
+python3 scripts/build_release.py --revision HEAD --version 2026.10.01 --repository https://github.com/zoolapp/aime-dicts --output dist/2026.10.01
 ```
 
 构建读取指定 Git commit 中的词表、目录与许可，忽略未提交内容；新增词条必须先提交。
@@ -33,8 +34,8 @@ python3 scripts/build_release.py --revision HEAD --version 2026-10-01 --output d
 ## 校验与使用
 
 ```sh
-cd dist/2026-10-01
-shasum -a 256 -c aime-vocabulary-2026-10-01.zip.sha256
+cd dist/2026.10.01
+shasum -a 256 -c aime-vocabulary-2026.10.01.zip.sha256
 shasum -a 256 -c SHA256SUMS
 ```
 
@@ -46,7 +47,7 @@ AIME 可用 TXT 做本地词库导入。RIME 使用者可将合并词典放入�
 可用已经构建好的 AIME CLI 做真实引擎验收，命令只创建临时目录，不安装、不写入当前输入法配置：
 
 ```sh
-python3 scripts/verify_rime.py --cli /absolute/path/to/aime --package dist/2026-10-01 --evidence build/rime-check
+python3 scripts/verify_rime.py --cli /absolute/path/to/aime --package dist/2026.10.01 --evidence build/rime-check
 ```
 
 验收编译合并词典并检查三份词表的代表词候选（DeepSeek、智能体、松弛感）；
@@ -54,6 +55,7 @@ JSON 和日志记录引擎产物、CLI 哈希与退出码，不代表每条词�
 
 ## 公开发布前
 
-确认公司组织与仓库后，再发布固定版本 Release，回读下载链接并校验 ZIP SHA-256；
-官网旧快照保持不变，新版本另建路径。在线订阅目录仍需固定版本、校验及 App 兼容验证，属于 D03。
+固定版本 Release 上传后，匿名下载并校验 ZIP、包内全部文件及三份订阅 TXT；
+目录经 main 发现版本，实际下载固定到 tag，更新时增加新 tag，不覆盖已发布版本。
+官网旧快照保持不变。现有 AIME 通用订阅器不自动验证目录中的 SHA-256；调试验证器会核对下载字节及哈希。
 CC BY 4.0 适用于本仓库原创词表；不包含第三方完整词库，也不表示品牌授权或背书。

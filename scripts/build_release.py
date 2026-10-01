@@ -76,7 +76,9 @@ def dictionary(name, version, revision, rows):
     return header.encode("utf-8") + row_bytes(rows)
 
 
-def build(repo, revision, version, output):
+def build(repo, revision, version, output, repository=None):
+    if repository is not None and not re.fullmatch(r"https://github\.com/[A-Za-z0-9-]+/[A-Za-z0-9._-]+", repository):
+        raise ValueError("repository must be a GitHub HTTPS repository URL")
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,63}", version):
         raise ValueError("version must be 1–64 safe ASCII characters")
     commit = git_bytes(repo, "rev-parse", "--verify", "--end-of-options",
@@ -90,7 +92,7 @@ def build(repo, revision, version, output):
     if LICENSE_URL not in license_data.decode() or AUTHOR not in license_data.decode():
         raise ValueError("source license/attribution requires review")
     files = {"LICENSE": license_data}
-    source = {"commit": commit, "repository": None, "publicationStatus": "pending",
+    source = {"commit": commit, "repository": repository, "publicationStatus": "public" if repository else "pending",
               "index": {"path": "index.json", "sha256": digest(index_data)}, "feeds": []}
     manifest = {"formatVersion": 1, "version": version, "sourceCommit": commit,
                 "author": AUTHOR, "license": "CC-BY-4.0", "licenseURL": LICENSE_URL,
@@ -112,6 +114,10 @@ def build(repo, revision, version, output):
                 or len(feed["name"]) > 80 or any(ord(c) < 32 for c in feed["name"])):
             raise ValueError("feed name required")
         data = read_blob(repo, commit, path)
+        if feed.get("sha256") is not None and feed["sha256"] != digest(data):
+            raise ValueError(f"catalog checksum mismatch: {path}")
+        if feed.get("size") is not None and feed["size"] != len(data):
+            raise ValueError(f"catalog size mismatch: {path}")
         rows = parse_rows(data, path)
         if type(feed.get("entries")) is not int or feed["entries"] != len(rows):
             raise ValueError(f"catalog count mismatch: {path}")
@@ -137,7 +143,7 @@ def build(repo, revision, version, output):
     files["ATTRIBUTION.txt"] = (
         f"AIME vocabulary {version}\nCopyright (c) 2026 {AUTHOR}\n"
         f"License: CC BY 4.0 — {LICENSE_URL}\nSource Git commit: {commit}\n"
-        "Public repository: pending company organization confirmation.\n"
+        f"Public repository: {repository or 'pending company organization confirmation.'}\n"
         "Changes: normalized release headers; converted TXT rows to RIME dictionaries;\n"
         "combined dictionary merges equal text/code pairs using the highest weight.\n"
         "Individual feeds preserve all source rows and weights. Brand names do not imply endorsement.\n"
@@ -172,9 +178,10 @@ def main():
     parser.add_argument("--revision", default="HEAD")
     parser.add_argument("--version", required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--repository", help="Verified public GitHub source repository URL")
     args = parser.parse_args()
     try:
-        print(json.dumps(build(ROOT, args.revision, args.version, args.output), ensure_ascii=False, indent=2))
+        print(json.dumps(build(ROOT, args.revision, args.version, args.output, args.repository), ensure_ascii=False, indent=2))
     except (ValueError, UnicodeError, subprocess.CalledProcessError) as error:
         parser.exit(1, f"release failed: {error}\n")
 

@@ -1,6 +1,6 @@
 # 互联网品牌与热词 — AIME 在线词库 (CC BY 4.0)
 # 格式：词条<TAB>拼音（空格分隔）<TAB>权重；兼容 RIME dict.yaml 词条行
-# https://github.com/foru17/aime-dicts
+# https://github.com/zoolapp/aime-dicts
 栓Q	shuan q	78
 显眼包	xian yan bao	90
 搭子	da zi	92

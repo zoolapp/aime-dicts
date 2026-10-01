@@ -104,6 +104,25 @@ class ReleaseTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             release.build(self.repo, "HEAD", "../../escape", self.root / "invalid")
 
+    def test_public_provenance_and_catalog_integrity(self):
+        repository = "https://github.com/zoolapp/aime-dicts"
+        result = release.build(self.repo, "HEAD", "v1", self.root / "public", repository)
+        with zipfile.ZipFile(result["archive"]) as bundle:
+            source = json.loads(bundle.read("SOURCE.json"))
+            self.assertEqual(source["repository"], repository)
+            self.assertEqual(source["publicationStatus"], "public")
+            self.assertIn(repository.encode(), bundle.read("ATTRIBUTION.txt"))
+        for index, mutation in enumerate([
+            lambda d: d["feeds"][0].update(sha256="0" * 64),
+            lambda d: d["feeds"][0].update(size=1),
+        ]):
+            self.write_catalog(mutation)
+            self.commit()
+            with self.assertRaises(ValueError):
+                release.build(self.repo, "HEAD", "v1", self.root / f"integrity-{index}")
+        with self.assertRaises(ValueError):
+            release.build(self.repo, "HEAD", "v1", self.root / "invalid-url", "file:///private")
+
 
 if __name__ == "__main__":
     unittest.main()

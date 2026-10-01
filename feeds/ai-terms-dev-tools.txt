@@ -1,6 +1,6 @@
 # AI 与开发术语 — AIME 在线词库 (CC BY 4.0)
 # 格式：词条<TAB>拼音（空格分隔）<TAB>权重；兼容 RIME dict.yaml 词条行
-# https://github.com/foru17/aime-dicts
+# https://github.com/zoolapp/aime-dicts
 大模型	da mo xing	96
 智能体	zhi neng ti	95
 多模态	duo mo tai	94
