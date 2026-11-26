@@ -161,3 +161,44 @@ Dify	dify	85
 星野	xing ye	80
 Vidu	vidu	84
 猫箱	mao xiang	78
+GPT-6	gpt6	92
+GPT-6 Astra	gpt6astra	88
+GPT-6.1 Sol	gpt61sol	84
+GPT-6.1 Terra	gpt61terra	84
+GPT-6.2 Astra	gpt62astra	88
+GPT-6.2 Sol	gpt62sol	85
+GPT Image 2.6	gptimage26	82
+Claude Fable	claudefable	90
+Claude Fable 5.1	claudefable51	84
+Claude Fable 5.2	claudefable52	88
+Claude Mythos 5.2	claudemythos52	80
+Claude Opus 5.5	claudeopus55	88
+Claude Sonnet 5.5	claudesonnet55	88
+Claude Haiku 5.5	claudehaiku55	85
+Gemini 3.8 Flash	gemini38flash	84
+Gemini 4	gemini4	90
+Gemini 4 Argon	gemini4argon	84
+Gemini 4 Carbon	gemini4carbon	86
+Gemini 4 Hydrogen	gemini4hydrogen	84
+Gemini 4 Neon	gemini4neon	86
+Nano Banana 2.1	nanobanana21	82
+Grok 4.7	grok47	86
+Muse Spark	musespark	80
+Kimi K3.1 Pro	kimik31pro	86
+GLM-5.4	glm54	86
+Qwen4	qwen4	88
+Qwen4-Max	qwen4max	86
+Hy4	hy4	80
+DeepSeek-V4	deepseekv4	90
+DeepSeek-V4.1-Flash	deepseekv41flash	84
+MiniMax M3.1 Flash	minimaxm31flash	82
+Step 5 Preview	step5preview	78
+Kling 4.0	kling40	84
+可灵4.0	ke ling 40	84
+Seedream 5.5	seedream55	82
+Seedance 2.5	seedance25	82
+豆包工作	dou bao gong zuo	88
+千问办公	qian wen ban gong	86
+WorkBuddy	workbuddy	84
+Qoder	qoder	82
+MiniMax Code	minimaxcode	80

@@ -1,7 +1,7 @@
 # AIME 在线词库
 
 AIME 输入法的词库源，由 [ZOOL](https://zool.app) 维护。
-每个词表都是一个纯文本文件；[固定版本下载](https://github.com/zoolapp/aime-dicts/releases/tag/v2026.10.01)含 TXT、RIME 词典与 SHA-256，使用方式见 [发行说明](docs/releases.md)。
+每个词表都是一个纯文本文件；[固定版本下载](https://github.com/zoolapp/aime-dicts/releases/tag/v2026.11.26)含 TXT、RIME 词典与 SHA-256，使用方式见 [发行说明](docs/releases.md)。
 
 也适用于任何 RIME 前端：词条行与 RIME `dict.yaml` 的词条部分兼容。
 
@@ -14,14 +14,14 @@ AIME 输入法的词库源，由 [ZOOL](https://zool.app) 维护。
 | 互联网品牌与热词 | 平台、品牌与 2026 年常见流行语 | [`feeds/internet-brands-platforms.txt`](feeds/internet-brands-platforms.txt) |
 
 发现目录：`https://raw.githubusercontent.com/zoolapp/aime-dicts/main/index.json`。
-`index.json` 的词表地址固定到 `v2026.10.01`，包含版本、SHA-256、字节数、许可和署名。
-三表各 160 条；合并去重后为 471 条。订阅下载后在本机查询，不上传输入内容或 userdb。
+`index.json` 的词表地址固定到 `v2026.11.26`，包含版本、SHA-256、字节数、许可和署名。
+三表共 543 条（AI 公司与产品 201、AI 与开发术语 161、互联网品牌与热词 181），2026-11-26 补充了 9–11 月的新模型、新品与热词。订阅下载后在本机查询，不上传输入内容或 userdb。
 
 ## 版本化构建
 
 ```sh
 python3 -m unittest discover -s tests -v
-python3 scripts/build_release.py --revision HEAD --version 2026.10.01 --repository https://github.com/zoolapp/aime-dicts --output dist/2026.10.01
+python3 scripts/build_release.py --revision HEAD --version 2026.11.26 --repository https://github.com/zoolapp/aime-dicts --output dist/2026.11.26
 ```
 
 发行包包括 TXT、RIME 词典、来源 commit、署名和 SHA-256；输出目录必须不存在。

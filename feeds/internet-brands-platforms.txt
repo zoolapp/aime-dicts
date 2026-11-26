@@ -161,3 +161,24 @@ Pura70	pura70	72
 蜜雪冰城	mi xue bing cheng	82
 瑞幸咖啡	rui xing ka fei	80
 海底捞	hai di lao	75
+慌啥子嘛	huang sha zi ma	82
+喝大水	he da shui	86
+大水理论	da shui li lun	86
+强者喝大水	qiang zhe he da shui	82
+薄肌理论	bo ji li lun	80
+后会友期	hou hui you qi	82
+蓝色星原	lan se xing yuan	84
+趣拍机	qu pai ji	80
+iPhone 18 Pro	iphone18pro	88
+iPhone 18 Pro Max	iphone18promax	86
+A20 Pro	a20pro	80
+华为Mate 90	hua wei mate90	88
+Mate 90	mate90	88
+Mate 90 Pro	mate90pro	86
+Mate 90 RS	mate90rs	82
+麒麟9050 Pro	qi lin 9050pro	82
+麒麟9035	qi lin 9035	80
+小米18 Pro	xiao mi 18pro	86
+OPPO Find X10	oppofindx10	84
+vivo X500	vivox500	84
+四卡三待	si ka san dai	80

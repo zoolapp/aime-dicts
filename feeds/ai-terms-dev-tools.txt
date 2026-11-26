@@ -161,3 +161,4 @@ Linux	linux	92
 macOS	macos	90
 Figma	figma	86
 Cursor	cursor	90
+推理强度	tui li qiang du	86
